@@ -12,6 +12,7 @@ Objective
 1️⃣ Install MySQL Database
 
 ![Alt Text](./images/install.jpg)
+
 ![Alt Text](./images/enable.jpg)
 
 2️⃣ Create a Directory for Backups
@@ -25,6 +26,7 @@ Objective
 4️⃣ Set Up Cron Job to Run Daily at 5:00 PM
 
 ![Alt Text](./images/crontab.jpg)
+
 ![Alt Text](./images/cronn.jpg)
 
 list the backup files
