@@ -1,24 +1,24 @@
-Ansible Playbooks for Web Server Configuration
+# Lab 5: Ansible Playbooks for Web Server Configuration
 
-📌 Objective
+## 📌 Objective
 
-This lab demonstrates how to use an **Ansible playbook** to automate the configuration of a web server using **Nginx**. The playbook performs the following tasks:
+This project demonstrates how to use an **Ansible playbook** to automate the installation and configuration of a web server using **Nginx**. The playbook performs the following tasks:
 
-- Installs Nginx on the managed node.
-- Customizes the default web page.
-- Verifies the successful deployment.
+- Installs the Nginx web server on managed nodes
+- Deploys a customized HTML landing page
+- Ensures the Nginx service is enabled and running
+- Configures the firewall to allow HTTP traffic
 
-Project Structure
+---
 
-├── inventory.ini
-
-├── playbook.yml
-
+## 📁 Project Structure
+```
+├── hosts           
+├── webserver.yml      
 └── files/
-
-└── index.html
-
-Ansible Playbook
+    └── index.html 
+```
+## 📜 Ansible Playbook (`webserver.yml`)
 
 ```
 - name: playbookl
@@ -52,14 +52,14 @@ Ansible Playbook
         immediate: yes
 ```
 
-inventory.ini
+🗂️ Inventory File (hosts)
 
 ```
 [webservers]
 servera
 serverb
 ```
-index.html
+🌐 Custom HTML Page (files/index.html)
 
 ```
 <!DOCTYPE html>
@@ -93,13 +93,13 @@ index.html
 </body>
 </html>
 ```
-Run the playbook:
+▶️ Running the Playbook
+Use the following command to execute the Ansible playbook:
 
 ```
-ansible-playbook -i hosts webserver. yml
+ansible-playbook -i hosts webserver.yml
 ```
-
-Visit the web server in a browser:
+✅ Verifying the Deployment
 
 ![Alt text](./images/servera.jpg)
 
