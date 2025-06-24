@@ -11,14 +11,25 @@ ssh-keygen
 
 2. Securely Transfer the Public Key to the Remote Machine
 
-![Alt Text](./images/ssh2.jpg)
+```
+ssh-copy-id ivolve@172.25.250.10
+```
 
 3. Configure SSH for Easy Access (ssh ivolve)
 
-![Alt Text](./images/ssh3.jpg)
-
-![Alt Text](./images/ssh4.jpg)
+```
+vim ~/.ssh/config
+```
+```
+Host ivolve
+    HostName 172.25.250.10
+    User ivolve
+    IdentityFile ~/.ssh/id_rsa
+```
 
 4. Test SSH Shortcut
 
+```
+ssh ivolve
+```
 ![Alt Text](./images/ssh5.jpg)

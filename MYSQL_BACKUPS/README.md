@@ -11,23 +11,37 @@ Objective
 
 1️⃣ Install MySQL Database
 
-![Alt Text](./images/install.jpg)
-
-![Alt Text](./images/enable.jpg)
+```
+yum install mysql-server
+systemctl start mysqld
+systemctl enable mysqld
+```
 
 2️⃣ Create a Directory for Backups
 
-![Alt Text](./images/createfolder.jpg)
+```
+mkdir -p ./mysql_backups
+```
 
 3️⃣ Create Shell Script for MySQL Backup
 
-![Alt Text](./images/sh.jpg)
+```
+#!/bin/bash
+BACKUP_DIR=~/mysql_backups
+DATE=$ (date +%F)
+FILENAME=MySQL_backup_${DATE}.sql
+
+mysqldump -u root -p redhat --all-databases › "$BACKUP_DIR/${FILENAME}"
+```
 
 4️⃣ Set Up Cron Job to Run Daily at 5:00 PM
 
-![Alt Text](./images/crontab.jpg)
-
-![Alt Text](./images/cronn.jpg)
+```
+crontab -e
+```
+```
+0 17 * * * ~/mysql_backup.sh
+```
 
 list the backup files
 
