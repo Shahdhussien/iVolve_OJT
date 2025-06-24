@@ -98,7 +98,6 @@ Run the playbook:
 ```
 ansible-playbook -i hosts webserver. yml
 ```
-![Alt text](./images/runplaybook2.jpg)
 
 Visit the web server in a browser:
 
