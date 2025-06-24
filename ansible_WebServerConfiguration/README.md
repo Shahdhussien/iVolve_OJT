@@ -11,8 +11,11 @@ This lab demonstrates how to use an **Ansible playbook** to automate the configu
 Project Structure
 
 ├── inventory.ini
+
 ├── playbook.yml
+
 └── files/
+
 └── index.html
 
 Ansible Playbook
@@ -95,4 +98,10 @@ Run the playbook:
 ```
 ansible-playbook -i hosts webserver. yml
 ```
+![Alt text](./images/runplaybook2.jpg)
+
+Visit the web server in a browser:
+
+![Alt text](./images/runplaybook2.jpg)
+
 ![Alt text](./images/runplaybook2.jpg)
