@@ -5,7 +5,9 @@ Configure secure, password-less SSH access to a remote machine using public/priv
 
 1. Generate Public & Private SSH Keys
 
-![Alt Text](./images/ssh1.jpg)
+```
+ssh-keygen
+```
 
 2. Securely Transfer the Public Key to the Remote Machine
 
