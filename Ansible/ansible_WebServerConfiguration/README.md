@@ -52,14 +52,14 @@ This project demonstrates how to use an **Ansible playbook** to automate the ins
         immediate: yes
 ```
 
-🗂️ Inventory File (hosts)
+## 🗂️ Inventory File (hosts)
 
 ```
 [webservers]
 servera
 serverb
 ```
-🌐 Custom HTML Page (files/index.html)
+## 🌐 Custom HTML Page (files/index.html)
 
 ```
 <!DOCTYPE html>
@@ -93,7 +93,7 @@ serverb
 </body>
 </html>
 ```
-▶️ Running the Playbook
+## ▶️ Running the Playbook
 Use the following command to execute the Ansible playbook:
 
 ```
