@@ -1,10 +1,15 @@
 # 🧪 Lab 7: Ansible Vault
 
 -🛠️ Write Ansible playbook to automate the following tasks:
+
 -💾 Install MySQL.
+
 -🗃️ Create iVolve database.
+
 -👤 Create user with all privileges on the iVolve DB.
+
 -🔐 Use Ansible Vault to encrypt sensitive information such as database user password.
+
 -✅ Validate DB on managed node by connecting to database using the created user and listing databases.
 
 
