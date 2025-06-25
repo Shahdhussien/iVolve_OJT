@@ -44,13 +44,7 @@ aws ec2 run-instances \
     --tag-specifications 'ResourceType=instance,Tags=[{Key=name,Value=ivolve}]'
 ```
 
-## 🛠️ Step 2: Install Ansible AWS EC2 Plugin
-
-```
-ansible-galaxy collection install amazon.aws
-```
-
-## 📁 Step 3: Create Inventory Configuration File
+## 📁 Step 2: Create Inventory Configuration File
 
 
 📝 Create ansible.cfg:
@@ -81,13 +75,13 @@ compose:
   ansible_host: public_ip_address
 ```
 
-## 🔐 Step 4: Set AWS Credentials
+## 🔐 Step 3: Set AWS Credentials
 
 ```
 aws configure
 ```
 
-## 📡 Step 5: List Hosts in Dynamic Inventory
+## 📡 Step 4: List Hosts in Dynamic Inventory
 
 ```
 ansible-inventory --graph
@@ -101,7 +95,7 @@ ansible-inventory --graph
   |  |--172.31.87.185
 ```
 
-## 📁 Step 7: Create Playbook File
+## 📁 Step 5: Create Playbook File
 
 ```
 ---
@@ -113,7 +107,7 @@ ansible-inventory --graph
       ping:   
 ```
 
-## 🧪 Step 7: Test Ansible Ping
+## 🧪 Step 6: Test Ansible Ping
 
 ```
 ansible -m ping ec2_tag_ivolve   -u ec2-user   --private-key ~/ansible.pem
@@ -130,7 +124,7 @@ output:
 }
 ```
 
-## ✅ Step 8: Run the Playbook
+## ✅ Step 7: Run the Playbook
 
 ```
 ansible-playbook ping.yml
