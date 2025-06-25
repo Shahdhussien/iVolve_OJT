@@ -29,24 +29,24 @@ fdisk /dev/nvme0n2
 Create a 2 GB partition → /dev/nvme0n2p1 🟢
 Create a 3 GB partition → /dev/nvme0n2p2 🔵
 
-# 3. Initialize the 2 GB partition as Physical Volume (PV)
+## 3. Initialize the 2 GB partition as Physical Volume (PV)
 
 ```
 pvcreate /dev/nvme0n2p1
 ```
 
-# 4. Create Volume Group (VG) with the 2 GB PV
+## 4. Create Volume Group (VG) with the 2 GB PV
 
 ```
 vgcreate vg_lab /dev/nvme0n2p1
 ```
-# 5. Create Logical Volume (LV) inside VG
+## 5. Create Logical Volume (LV) inside VG
 
 ```
 lvcreate -L 1.9G -n lv_lab vg_lab
 ```
 
-# 6. Format and mount the Logical Volume
+## 6. Format and mount the Logical Volume
 
 ```
 mkfs.ext4 /dev/vg_lab/lv_lab
@@ -59,30 +59,30 @@ Check space:
 df -h /mnt/lv_lab
 ```
 
-# 7. Initialize the 3 GB partition as Physical Volume (PV)
+## 7. Initialize the 3 GB partition as Physical Volume (PV)
 
 ```
 pvcreate /dev/nvme0n2p2
 ```
-# 8. Extend the Volume Group by adding the 3 GB PV
+## 8. Extend the Volume Group by adding the 3 GB PV
 
 ```
 vgextend vg_lab /dev/nvme0n2p2
 ```
 
-# 9. Extend the Logical Volume to use the new space
+## 9. Extend the Logical Volume to use the new space
 
 ```
 lvextend -l +100%FREE /dev/vg_lab/lv_lab
 ```
 
-# 10. Resize the filesystem
+## 10. Resize the filesystem
 
 ```
 resize2fs /dev/vg_lab/lv_lab
 ```
 
-# 11. Verify everything
+## 11. Verify everything
 
 ```
 df -h /mnt/lv_lab
