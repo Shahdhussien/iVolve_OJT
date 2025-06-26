@@ -1,4 +1,4 @@
-# 🧪 Lab 9: Build Java App using Maven
+# 🧪 Lab 10: Build Java App using Maven
 
 ## 🔧 Requirements
 
