@@ -139,7 +139,88 @@ PLAY RECAP *********************************************************************
 
 ```
 
+```
+.
+├── build
+│   ├── classes
+│   │   └── java
+│   │       ├── main
+│   │       │   └── com
+│   │       │       └── ivolve
+│   │       │           └── App.class
+│   │       └── test
+│   │           └── com
+│   │               └── ivolve
+│   │                   └── AppTest.class
+│   ├── distributions
+│   │   ├── build1-1.0.tar
+│   │   └── build1-1.0.zip
+│   ├── generated
+│   │   └── sources
+│   │       ├── annotationProcessor
+│   │       │   └── java
+│   │       │       ├── main
+│   │       │       └── test
+│   │       └── headers
+│   │           └── java
+│   │               ├── main
+│   │               └── test
+│   ├── libs
+│   │   └── ivolve-app.jar
+│   ├── reports
+│   │   ├── problems
+│   │   │   └── problems-report.html
+│   │   └── tests
+│   │       └── test
+│   │           ├── classes
+│   │           │   └── com.ivolve.AppTest.html
+│   │           ├── css
+│   │           │   ├── base-style.css
+│   │           │   └── style.css
+│   │           ├── index.html
+│   │           ├── js
+│   │           │   └── report.js
+│   │           └── packages
+│   │               └── com.ivolve.html
+│   ├── scripts
+│   │   ├── build1
+│   │   └── build1.bat
+│   ├── test-results
+│   │   └── test
+│   │       ├── binary
+│   │       │   ├── output.bin
+│   │       │   ├── output.bin.idx
+│   │       │   └── results.bin
+│   │       └── TEST-com.ivolve.AppTest.xml
+│   └── tmp
+│       ├── compileJava
+│       │   ├── compileTransaction
+│       │   │   ├── backup-dir
+│       │   │   └── stash-dir
+│       │   │       └── App.class.uniqueId0
+│       │   └── previous-compilation-data.bin
+│       ├── compileTestJava
+│       │   └── previous-compilation-data.bin
+│       ├── jar
+│       │   └── MANIFEST.MF
+│       └── test
+├── build.gradle
+├── settings.gradle
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── ivolve
+    │               └── App.java
+    └── test
+        └── java
+            └── com
+                └── ivolve
+                    └── AppTest.java
 
+51 directories, 26 files
+
+```
 
 
 
