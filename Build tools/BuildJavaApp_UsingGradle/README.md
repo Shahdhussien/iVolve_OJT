@@ -1,4 +1,4 @@
-# 🧪 Lab 9: Build Java App using Gradle (CentOS + Java 21)
+# 🧪 Lab 9: Build Java App using Gradle
 
 ## 🔧 Requirements
 
