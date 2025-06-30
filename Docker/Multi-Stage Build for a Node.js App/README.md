@@ -36,7 +36,6 @@ EXPOSE 8080
 
 CMD ["java", "-jar", "app.jar"]
 ```
-✅ Notes:
 
 ## 🧱 Step 3: Build the Docker Image
 
@@ -56,7 +55,7 @@ docker run -d -p 8080:8080 --name my-app-multistage  my-img-multistage
 curl http://localhost:8080
 ```
 
-![Alt text](../images/curloutside.jpg)
+![Alt text](../RunJavaSpringBootApp_inContainer/images/curloutside.jpg)
 
 ## 🛑 Step 6: Stop and Remove the Container
 
