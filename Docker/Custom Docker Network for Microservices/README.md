@@ -87,3 +87,7 @@ docker rm backend frontend1 frontend2
 docker network rm ivolve-network
 ```
 
+
+
+
+App mode: development, Region: us-east
