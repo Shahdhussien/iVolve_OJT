@@ -1,4 +1,4 @@
-# 📘 Docker Compose Setup for Node.js + PostgreSQL App
+# Lab 16: 📘 Docker Compose Setup for Node.js + PostgreSQL App
 
 This documentation explains how to set up and run a simple Node.js application connected to a PostgreSQL database using Docker Compose.
 
