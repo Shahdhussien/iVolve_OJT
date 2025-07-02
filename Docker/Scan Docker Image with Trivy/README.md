@@ -2,7 +2,6 @@
 
 This lab demonstrates how to containerize a Java Maven Containerize a Java Maven application using Docker, build the app inside the container, scan the resulting Docker image for vulnerabilities using Trivy, generate a JSON report, and push the image to Docker Hub.
 
-
 ---
 
 ## Steps
@@ -57,3 +56,8 @@ trivy image --format json --output trivy-report.json shahd0/lab17-trivy-demo:lat
 docker login
 docker push shahd0/lab17-trivy-demo:latest
 ```
+![Alt text](./images/img.jpg)
+
+## Output
+
+JSON vulnerability report: [vulnerability.json](view)
