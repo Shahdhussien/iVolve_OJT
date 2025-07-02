@@ -48,7 +48,7 @@ trivy --version
 ##### Run the scan:
 
 ```
-trivy image --scanners vuln --timeout 10m --format json --output trivy-report.json shahd0/lab17-trivy-demo:latest
+trivy image --format json --output trivy-report.json shahd0/lab17-trivy-demo:latest
 ```
 
 ### Step 5. Push the image to Docker Hub
