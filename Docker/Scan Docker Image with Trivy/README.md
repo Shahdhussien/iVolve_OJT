@@ -10,7 +10,7 @@ This lab demonstrates how to containerize a Java Maven Containerize a Java Maven
 ### 1. Clone the project repository
 
 ```
-git clone https://github.com/lbrahim-Adel15/Docker-1.git
+git clone https://github.com/ibrahim-Adel15/Docker-1.git
 cd Docker-1/Lab17
 ```
 
