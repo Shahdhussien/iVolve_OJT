@@ -2,7 +2,6 @@
 
 This lab demonstrates how to containerize a Java Maven Containerize a Java Maven application using Docker, build the app inside the container, scan the resulting Docker image for vulnerabilities using Trivy, generate a JSON report, and push the image to Docker Hub.
 
----
 
 ## Steps
 
