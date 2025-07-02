@@ -60,4 +60,4 @@ docker push shahd0/lab17-trivy-demo:latest
 
 ## Output
 
-JSON vulnerability report: [vulnerability.json](view)
+JSON vulnerability report: [view](vulnerability.json)
