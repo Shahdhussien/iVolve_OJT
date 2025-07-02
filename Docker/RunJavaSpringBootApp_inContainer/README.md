@@ -103,7 +103,7 @@ REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
 my-img-outside   latest    be35f951046b   14 minutes ago   495MB
 my-app           latest    a08385f8f447   30 minutes ago   541MB
 ```
-***  Building outside the container creates a lighter, cleaner image — faster to deploy, ship, and start. 🚀
+***  Building outside the container creates a lighter, cleaner image — faster to deploy, ship, and start. 
 
 
 ### 6️⃣ Stop & Delete the Container
