@@ -55,7 +55,7 @@ trivy image --scanners vuln --timeout 10m --format json --output trivy-report.js
 
 ```
 docker login
-docker push yourdockerhubusername/lab17-trivy-demo:latest
+docker push shahd0/lab17-trivy-demo:latest
 ```
 
 ## Verification 
