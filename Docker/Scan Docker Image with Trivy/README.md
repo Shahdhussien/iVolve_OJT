@@ -57,31 +57,3 @@ trivy image --format json --output trivy-report.json shahd0/lab17-trivy-demo:lat
 docker login
 docker push shahd0/lab17-trivy-demo:latest
 ```
-
-## Verification 
-
-### 🔹 1. Run the container
-
-```
-docker run -d -p 8080:8080 shahd0/lab17-trivy-demo:latest
-```
-### 🔹 2. Check that the container is running
-
-```
-docker ps
-```
-
-```
-CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS          PORTS                                         NAMES
-4a7b4f51c734   shahd0/lab17-trivy-demo:latest   "/usr/local/bin/mvn-…"   11 minutes ago   Up 11 minutes   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   hungry_davinci
-```
-
-### 🔹 3. Test the application
-
-```
-curl http://localhost:8080
-```
-
-```
-Hello from Dockerized Spring Boot!
-```
