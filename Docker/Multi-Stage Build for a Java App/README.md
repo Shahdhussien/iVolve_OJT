@@ -1,7 +1,7 @@
 # 📘 Lab 12: Multi-Stage Build for a Java Spring Boot App using Docker
 
 ## 📌 Goal
-Package and run a Java Spring Boot application inside a Docker container using multi-stage build to reduce image size and separate build/runtime environments.
+Package and run a Java Spring Boot application inside a Docker container using multi-stage build to reduce image size and separate build runtime environments.
 
 ## 📂 Step 1: Clone the Application Code
 
