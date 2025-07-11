@@ -1,4 +1,4 @@
-# 🧪 Lab 9: Build Java App using Gradle
+# 🧪 Lab 9: Build Java App using Gradle 
 
 ## 🔧 Requirements
 
