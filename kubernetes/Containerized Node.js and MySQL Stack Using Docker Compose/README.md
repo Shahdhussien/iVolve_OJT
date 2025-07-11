@@ -57,7 +57,7 @@ volumes:
 ### 3. Build and run the services
 
 ```
-docker-compose up --build
+docker compose up --build
 ```
 
 ### 4. Verify the application
@@ -66,9 +66,10 @@ Visit: http://localhost:3000 to check if the app is running.
 
 ![Alt text](./images/site.jpg)
 
-Health check endpoint: http://localhost:3000/health
+Health check endpoint: http://localhost:3000/health\
 
-![Alt text](./images/healthjpg)
+
+![Alt text](./images/health.jpg)
 
 Readiness check endpoint: http://localhost:3000/ready
 
